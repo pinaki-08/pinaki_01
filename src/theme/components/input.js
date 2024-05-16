@@ -1,4 +1,5 @@
 import { mode } from "@chakra-ui/theme-tools";
+import React from "react";
 export const inputStyles = {
   components: {
     Input: {

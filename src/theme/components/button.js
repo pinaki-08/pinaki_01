@@ -1,4 +1,5 @@
 import { mode } from "@chakra-ui/theme-tools";
+import React from "react";
 export const buttonStyles = {
   components: {
     Button: {
@@ -17,6 +18,19 @@ export const buttonStyles = {
       variants: {
         outline: () => ({
           borderRadius: "16px",
+        }),
+        pina: (props) => ({
+          bg: mode("pina.500", "pina.400")(props),
+          color: "white",
+          _focus: {
+            bg: mode("pina.500", "pina.400")(props),
+          },
+          _active: {
+            bg: mode("pina.500", "pina.400")(props),
+          },
+          _hover: {
+            bg: mode("pina.600", "pina.400")(props),
+          },
         }),
         brand: (props) => ({
           bg: mode("brand.500", "brand.400")(props),

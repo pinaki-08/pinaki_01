@@ -1,26 +1,26 @@
 [
   {
-    "name":"Marketplace",
-    "status": "Approved",
-    "date": "24.Jan.2021",
-    "progress": 75.5  
+    "name":"Fix You",
+    "singer": "Cold Play",
+    "date": "24.April.2024",
+    "platform": "Spotify" 
   },
   {
-    "name":"Marketplace",
-    "status": "Disable",
-    "date": "30.Dec.2021",
-    "progress": 25.5  
+    "name":"Yellow",
+    "singer": "Cold Play",
+    "date": "30.April.2024",
+    "platform": "Youtube" 
   },
   {
-    "name":"Marketplace",
-    "status": "Error",
-    "date": "20.May.2021",
-    "progress": 90  
+    "name":"Gone Gone Gone",
+    "singer": "Phillip Phillips",
+    "date": "20.April.2024",
+    "platform": "iTunes"
   },
   {
-    "name":"Marketplace",
-    "status": "Approved",
-    "date": "12.Jul.2021",
-    "progress": 50.5  
+    "name":"Photograph",
+    "singer": "Ed Sheeran",
+    "date": "12.April.2024",
+    "platform": "Spotify" 
   }
 ]

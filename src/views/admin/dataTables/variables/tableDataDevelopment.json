@@ -1,68 +1,70 @@
 [
   {
-    "name":"Marketplace",
-    "tech": ["apple","android","windows"], 
-    "date": "12.Jan.2021",
-    "progress": 75.5  
+    "app":"Instagram",
+    "device": ["apple","android","windows"], 
+    "date": "1.April.2024",
+    "percent": 5.0
   },
   {
-    "name":"Venus DB PRO",
-    "tech": ["apple" ], 
-    "date": "21.Feb.2021",
-    "progress": 35.4  
+    "app":"Facebook",
+    "device": ["apple" ], 
+    "date": "2.April.2024",
+    "percent": 3 
   },
   {
-    "name":"Venus DS",
-    "tech": ["apple" ,"windows"], 
-    "date": "13.Mar.2021",
-    "progress": 25  
+    "app":"Youtube",
+    "device": ["apple" ,"windows"], 
+    "date": "3.April.2024",
+    "percent": 15  
   },
   {
-    "name":"Venus 3D Asset",
-    "tech": ["apple","android","windows"], 
-    "date": "24.Jan.2021",
-    "progress": 100  
+    "app":"Spotify",
+    "device": ["apple","android","windows"], 
+    "date": "3.April.2024",
+    "percent": 10 
   },
   {
-    "name":"Marketplace",
-    "tech": ["apple", "windows"], 
-    "date": "Oct 24, 2022",
-    "progress": 75.5  
+    "app":"Netflix",
+    "device": ["apple", "windows"], 
+    "date": "5.April. 2024",
+    "percent": 20 
   },
   {
-    "name":"Marketplace",
-    "tech": ["apple","android","windows"], 
-    "date": "Oct 24, 2022",
-    "progress": 75.5  
+    "app":"ZARA",
+    "device": ["apple","android","windows"], 
+    "date": "8.April 2024",
+    "percent": 7  
   },
   {
-    "name":"Marketplace",
-    "tech": ["apple","android","windows"], 
-    "date": "12.Jan.2021",
-    "progress": 75.5  
+    "app":"H&M",
+    "device": ["apple","android","windows"], 
+    "date": "8.April.2024",
+    "percent": 4  
   },
   {
-    "name":"Venus DB PRO",
-    "tech": ["apple" ], 
-    "date": "21.Feb.2021",
-    "progress": 35.4  
+    "app":"Snapchat",
+    "device": ["apple" ], 
+    "date": "8.April.2024",
+    "percent": 1  
   },
   {
-    "name":"Venus DS",
-    "tech": ["apple" ,"windows"], 
-    "date": "13.Mar.2021",
-    "progress": 25  
+    "app":"Doordash",
+    "device": ["apple" ,"windows"], 
+    "date": "April.2024",
+    "percent": 18  
   },
   {
-    "name":"Venus 3D Asset",
-    "tech": ["apple","android","windows"], 
-    "date": "24.Jan.2021",
-    "progress": 100  
+    "app":"Linkedin",
+    "device": ["apple","android","windows"], 
+    "date": "15.April.2024",
+    "percent": 30 
   },
   {
-    "name":"Marketplace",
-    "tech": ["apple", "windows"], 
-    "date": "Oct 24, 2022",
-    "progress": 75.5  
+    "app":"Whatsapp",
+    "device": ["apple","android","windows"], 
+    "date": "15.April.2024",
+    "percent": 13 
   }
+  
+    
 ]

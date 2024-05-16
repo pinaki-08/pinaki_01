@@ -1,24 +1,3 @@
-/*!
-  _   _  ___  ____  ___ ________  _   _   _   _ ___   
- | | | |/ _ \|  _ \|_ _|__  / _ \| \ | | | | | |_ _| 
- | |_| | | | | |_) || |  / / | | |  \| | | | | || | 
- |  _  | |_| |  _ < | | / /| |_| | |\  | | |_| || |
- |_| |_|\___/|_| \_\___/____\___/|_| \_|  \___/|___|
-                                                                                                                                                                                                                                                                                                                                       
-=========================================================
-* Horizon UI - v1.1.0
-=========================================================
-
-* Product Page: https://www.horizon-ui.com/
-* Copyright 2023 Horizon UI (https://www.horizon-ui.com/)
-
-* Designed and Coded by Simmmple
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 
 import React from "react";
 
@@ -32,28 +11,34 @@ import {
   Text,
   useColorModeValue,
   SimpleGrid,
+  Icon,
 } from "@chakra-ui/react";
+
 
 // Custom components
 import Banner from "views/admin/marketplace/components/Banner";
-import TableTopCreators from "views/admin/marketplace/components/TableTopCreators";
+// import TableTopCreators from "views/admin/marketplace/components/TableTopCreators";
 import HistoryItem from "views/admin/marketplace/components/HistoryItem";
 import NFT from "components/card/NFT";
 import Card from "components/card/Card.js";
+import createGlobe from 'cobe'
+
 
 // Assets
-import Nft1 from "assets/img/nfts/Nft1.png";
-import Nft2 from "assets/img/nfts/Nft2.png";
-import Nft3 from "assets/img/nfts/Nft3.png";
-import Nft4 from "assets/img/nfts/Nft4.png";
-import Nft5 from "assets/img/nfts/Nft5.png";
-import Nft6 from "assets/img/nfts/Nft6.png";
-import Avatar1 from "assets/img/avatars/avatar1.png";
-import Avatar2 from "assets/img/avatars/avatar2.png";
-import Avatar3 from "assets/img/avatars/avatar3.png";
-import Avatar4 from "assets/img/avatars/avatar4.png";
+import Nft1 from "assets/img/nfts/Nft1.avif";
+import Nft2 from "assets/img/nfts/Nft2.avif";
+import Nft3 from "assets/img/nfts/Nft3.jpg";
+import Nft4 from "assets/img/nfts/Nft4.jpg";
+// import Nft5 from "assets/img/nfts/Nft5.png";
+// import Nft6 from "assets/img/nfts/Nft6.png";
+// import Avatar1 from "assets/img/avatars/avatar1.png";
+// import Avatar2 from "assets/img/avatars/avatar2.png";
+// import Avatar3 from "assets/img/avatars/avatar3.png";
+// import Avatar4 from "assets/img/avatars/avatar4.png";
 import tableDataTopCreators from "views/admin/marketplace/variables/tableDataTopCreators.json";
 import { tableColumnsTopCreators } from "views/admin/marketplace/variables/tableColumnsTopCreators";
+import { FaHeart } from "react-icons/fa";
+import { MdAccessibilityNew } from "react-icons/md";
 
 export default function Marketplace() {
   // Chakra Color Mode
@@ -69,7 +54,7 @@ export default function Marketplace() {
         display={{ base: "block", xl: "grid" }}>
         <Flex
           flexDirection='column'
-          gridArea={{ xl: "1 / 1 / 2 / 3", "2xl": "1 / 1 / 2 / 2" }}>
+          gridArea={{ xl: "4/ 4 / 4 / 4", "2xl": "2 / 2 / 2 / 2" }}>
           <Banner />
           <Flex direction='column'>
             <Flex
@@ -79,7 +64,7 @@ export default function Marketplace() {
               direction={{ base: "column", md: "row" }}
               align={{ base: "start", md: "center" }}>
               <Text color={textColor} fontSize='2xl' ms='24px' fontWeight='700'>
-                Trending NFTs
+               You Matter!
               </Text>
               <Flex
                 align='center'
@@ -90,112 +75,144 @@ export default function Marketplace() {
                   color={textColorBrand}
                   fontWeight='500'
                   me={{ base: "34px", md: "44px" }}
-                  to='#art'>
-                  Art
+                  to='#Heart' >
+                    
+                  Heart
+                  {/* <Icon
+                      as={FaHeart}
+                      me="12px"
+                      h="15px"
+                      w="16px"
+                      color="red"
+                      ml="1px"
+                    /> */}
                 </Link>
                 <Link
                   color={textColorBrand}
                   fontWeight='500'
                   me={{ base: "34px", md: "44px" }}
-                  to='#music'>
-                  Music
+                  to='# Body Measurments'>
+                  Body Measurments
+                  
+                    
                 </Link>
                 <Link
                   color={textColorBrand}
                   fontWeight='500'
                   me={{ base: "34px", md: "44px" }}
-                  to='#collectibles'>
-                  Collectibles
+                  to='#Medications'>
+                  Medications
                 </Link>
                 <Link color={textColorBrand} fontWeight='500' to='#sports'>
                   Sports
                 </Link>
               </Flex>
             </Flex>
-            <SimpleGrid columns={{ base: 1, md: 3 }} gap='20px'>
-              <NFT
-                name='Abstract Colors'
-                author='By Esthera Jackson'
-                bidders={[
-                  Avatar1,
-                  Avatar2,
-                  Avatar3,
-                  Avatar4,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                ]}
+            <SimpleGrid columns={{ base: 4, md: 4}} gap='20px'>
+               <NFT
+                name='Exercise is Medicine'
+                author='By Azusa'
+                
+                // bidders={[
+                //   Avatar1,
+                //   Avatar2,
+                //   Avatar3,
+                //   Avatar4,
+                //   Avatar1,
+                //   Avatar1,
+                //   Avatar1,
+                //   Avatar1,
+                // ]}
                 image={Nft1}
-                currentbid='0.91 ETH'
-                download='#'
-              />
+               
+                download='#/article/article/Exercise'
+              /> 
+            
               <NFT
-                name='ETH AI Brain'
-                author='By Nick Wilson'
-                bidders={[
-                  Avatar1,
-                  Avatar2,
-                  Avatar3,
-                  Avatar4,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                ]}
+                name='Sleep is Medicine'
+                author='By Azusa'
+                // bidders={[
+                //   Avatar1,
+                //   Avatar2,
+                //   Avatar3,
+                //   Avatar4,
+                //   Avatar1,
+                //   Avatar1,
+                //   Avatar1,
+                //   Avatar1,
+                // ]}
                 image={Nft2}
-                currentbid='0.91 ETH'
-                download='#'
-              />
+         
+                download='#/article/article/Sleep'
+              /> 
+
+              
               <NFT
-                name='Mesh Gradients '
-                author='By Will Smith'
-                bidders={[
-                  Avatar1,
-                  Avatar2,
-                  Avatar3,
-                  Avatar4,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                ]}
+                name='Love is Medicine '
+                author='By Azusa'
+                // bidders={[
+                //   Avatar1,
+                //   Avatar2,
+                //   Avatar3,
+                //   Avatar4,
+                //   Avatar1,
+                //   Avatar1,
+                //   Avatar1,
+                //   Avatar1,
+                // ]}
                 image={Nft3}
-                currentbid='0.91 ETH'
-                download='#'
+               
+                download='#/article/article/Love'
               />
+
+              <NFT
+
+              // columns={{ base: 1, md: 3 }}
+              // gap='20px'
+              // mb={{ base: "20px", xl: "0px" }}>
+
+                name='Food is Medicine'
+                author='By Azusa'
+                // bidders={[
+                //   Avatar1,
+                //   Avatar2,
+                //   Avatar3,
+                //   Avatar4,
+                //   Avatar1,
+                //   Avatar1,
+                //   Avatar1,
+                //   Avatar1,
+                // ]}
+                image={Nft4}
+              
+                download='#/article/article/Food'
+              />
+
+              
             </SimpleGrid>
-            <Text
-              mt='45px'
-              mb='36px'
-              color={textColor}
-              fontSize='2xl'
-              ms='24px'
-              fontWeight='700'>
-              Recently Added
-            </Text>
-            <SimpleGrid
+            
+            {/* <SimpleGrid
               columns={{ base: 1, md: 3 }}
               gap='20px'
               mb={{ base: "20px", xl: "0px" }}>
               <NFT
-                name='Swipe Circles'
-                author='By Peter Will'
-                bidders={[
-                  Avatar1,
-                  Avatar2,
-                  Avatar3,
-                  Avatar4,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                  Avatar1,
-                ]}
+                name='Food is Medicine'
+                author='By Azusa'
+                // bidders={[
+                //   Avatar1,
+                //   Avatar2,
+                //   Avatar3,
+                //   Avatar4,
+                //   Avatar1,
+                //   Avatar1,
+                //   Avatar1,
+                //   Avatar1,
+                // ]}
                 image={Nft4}
                 currentbid='0.91 ETH'
                 download='#'
-              />
-              <NFT
+              /> */}
+              {/* <NFT
                 name='Colorful Heaven'
                 author='By Mark Benjamin'
                 bidders={[
@@ -211,8 +228,8 @@ export default function Marketplace() {
                 image={Nft5}
                 currentbid='0.91 ETH'
                 download='#'
-              />
-              <NFT
+              /> */}
+              {/* <NFT
                 name='3D Cubes Art'
                 author='By Manny Gates'
                 bidders={[
@@ -228,11 +245,11 @@ export default function Marketplace() {
                 image={Nft6}
                 currentbid='0.91 ETH'
                 download='#'
-              />
-            </SimpleGrid>
+              /> */}
+            {/* </SimpleGrid>*/}
           </Flex>
-        </Flex>
-        <Flex
+        </Flex> 
+        {/* <Flex
           flexDirection='column'
           gridArea={{ xl: "1 / 3 / 2 / 4", "2xl": "1 / 2 / 2 / 3" }}>
           <Card px='0px' mb='20px'>
@@ -240,28 +257,28 @@ export default function Marketplace() {
               tableData={tableDataTopCreators}
               columnsData={tableColumnsTopCreators}
             />
-          </Card>
-          <Card p='0px'>
-            <Flex
+          </Card>  */}
+          {/* <Card p='0px'> 
+             <Flex
               align={{ sm: "flex-start", lg: "center" }}
               justify='space-between'
               w='100%'
               px='22px'
-              py='18px'>
+              py='18px'> 
               <Text color={textColor} fontSize='xl' fontWeight='600'>
                 History
               </Text>
-              <Button variant='action'>See all</Button>
-            </Flex>
+              <Button variant='action'>See all</Button> 
+            </Flex>  */}
 
-            <HistoryItem
+            {/* <HistoryItem
               name='Colorful Heaven'
               author='By Mark Benjamin'
               date='30s ago'
               image={Nft5}
               price='0.91 ETH'
-            />
-            <HistoryItem
+            /> */}
+            {/* <HistoryItem
               name='Abstract Colors'
               author='By Esthera Jackson'
               date='58s ago'
@@ -288,18 +305,18 @@ export default function Marketplace() {
               date='2m ago'
               image={Nft3}
               price='0.91 ETH'
-            />
-            <HistoryItem
+            /> */}
+            {/* <HistoryItem
               name='3D Cubes Art'
               author='By Manny Gates'
               date='3m ago'
               image={Nft6}
               price='0.91 ETH'
-            />
-          </Card>
-        </Flex>
-      </Grid>
+            />  */}
+           {/* </Card>  */}
+        {/* </Flex> */}
+      </Grid> 
       {/* Delete Product */}
     </Box>
   );
-}
+} // Add closing parenthesis here

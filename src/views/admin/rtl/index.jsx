@@ -41,8 +41,17 @@ import React from "react";
 import {
   MdAddTask,
   MdAttachMoney,
+  MdBalance,
   MdBarChart,
   MdFileCopy,
+  MdHome,
+  MdHouse,
+  MdLocalGasStation,
+  MdLocalGroceryStore,
+  MdMoney,
+  MdOutlineHouse,
+  MdPresentToAll,
+  MdSavings,
 } from "react-icons/md";
 import CheckTable from "views/admin/default/components/CheckTable";
 import ComplexTable from "views/admin/default/components/ComplexTable";
@@ -80,7 +89,7 @@ export default function UserReports() {
             />
           }
           name='Earnings'
-          value='$350.4'
+          value='$2400'
         />
         <MiniStatistics
           startContent={
@@ -89,15 +98,52 @@ export default function UserReports() {
               h='56px'
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdAttachMoney} color={brandColor} />
+                <Icon w='32px' h='32px' as={MdLocalGroceryStore} color={brandColor} />
               }
             />
           }
-          name='Spend this month'
+          name='Grocery'
           value='$642.39'
         />
-        <MiniStatistics growth='+23%' name='Sales' value='$574.34' />
         <MiniStatistics
+          startContent={
+            <IconBox
+              w='56px'
+              h='56px'
+              bg={boxBg}
+             
+              icon={<Icon w='28px' h='28px' as={MdHome} color={brandColor} />}
+            />
+          }
+          name='House Rent'
+          value='$1500'
+        />
+        
+        <MiniStatistics
+          startContent={
+            <IconBox
+              w='56px'
+              h='56px'
+              bg={boxBg}
+              icon={
+                <Icon w='32px' h='32px' as={MdLocalGasStation} color={brandColor} />
+              }
+            />
+          }
+          name='Gas'
+          value='$100'
+        />
+        <MiniStatistics
+        startContent={
+          <IconBox
+            w='56px'
+            h='56px'
+            bg={boxBg}
+           
+            icon={<Icon w='28px' h='28px' as={MdSavings} color={brandColor} />}
+          />
+        } growth='+23%' name='Savings' value='$1757.61' />
+        {/* <MiniStatistics
           endContent={
             <Flex me='-16px' mt='10px'>
               <FormLabel htmlFor='balance'>
@@ -116,20 +162,8 @@ export default function UserReports() {
             </Flex>
           }
           name='Your balance'
-          value='$1,000'
-        />
-        <MiniStatistics
-          startContent={
-            <IconBox
-              w='56px'
-              h='56px'
-              bg='linear-gradient(90deg, #4481EB 0%, #04BEFE 100%)'
-              icon={<Icon w='28px' h='28px' as={MdAddTask} color='white' />}
-            />
-          }
-          name='New Tasks'
-          value='154'
-        />
+          value='$6,000'
+        /> */}
         <MiniStatistics
           startContent={
             <IconBox
@@ -137,20 +171,22 @@ export default function UserReports() {
               h='56px'
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdFileCopy} color={brandColor} />
+                <Icon w='32px' h='32px' as={MdMoney} color={brandColor} />
               }
             />
           }
-          name='Total Projects'
-          value='2935'
+          name='Savings'
+          value='$1200'
         />
+        
+        
       </SimpleGrid>
 
-      <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px' mb='20px'>
+      <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px' mb='20px' ml='20px'>
         <TotalSpent />
-        <WeeklyRevenue />
-      </SimpleGrid>
-      <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
+        {/* <WeeklyRevenue /> */}
+      {/* </SimpleGrid> */}
+      {/* <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
         <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} />
         <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px'>
           <DailyTraffic />
@@ -161,11 +197,11 @@ export default function UserReports() {
         <ComplexTable
           columnsData={columnsDataComplex}
           tableData={tableDataComplex}
-        />
-        <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px'>
-          <Tasks />
-          <MiniCalendar h='100%' minW='100%' selectRange={false} />
-        </SimpleGrid>
+        /> */}
+        {/* <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='60px'> */}
+          {/* <Tasks /> */}
+          <MiniCalendar h='100%' minW='50%' ml='40px' selectRange={false} />
+        {/* </SimpleGrid> */}
       </SimpleGrid>
     </Box>
   );

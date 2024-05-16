@@ -209,10 +209,10 @@ export const barChartOptionsConsumption = {
 };
 
 export const pieChartOptions = {
-  labels: ["Your files", "System", "Empty"],
-  colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+  labels: ["React", "Python", "C", "HTML", "JavaScript"],
+  colors: ["#4318FF", "#6AD2FF", "#1a0b8a"],
   chart: {
-    width: "50px",
+    width: "100px",
   },
   states: {
     hover: {
@@ -239,7 +239,7 @@ export const pieChartOptions = {
     },
   },
   fill: {
-    colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+    colors: ["rgb(222, 123, 153)", "#8f92c9", "#79505b", "#b76196", "#47898f"],
   },
   tooltip: {
     enabled: true,
@@ -247,18 +247,18 @@ export const pieChartOptions = {
   },
 };
 
-export const pieChartData = [63, 25, 12];
+export const pieChartData = [26, 20, 26, 20, 20];
 
 // Total Spent Default
 
 export const lineChartDataTotalSpent = [
   {
-    name: "Revenue",
-    data: [50, 64, 48, 66, 49, 68],
+    name: "Savings",
+    data: [1500, 1640, 1485, 1667, 1491, 1618],
   },
   {
-    name: "Profit",
-    data: [30, 40, 24, 46, 20, 46],
+    name: "Expense",
+    data: [1230, 1240, 1124, 1416, 1210, 1146],
   },
 ];
 
@@ -276,7 +276,7 @@ export const lineChartOptionsTotalSpent = {
       color: "#4318FF",
     },
   },
-  colors: ["#4318FF", "#39B8FF"],
+  colors: ["#4c2243", "#755a99"],
   markers: {
     size: 0,
     colors: "white",

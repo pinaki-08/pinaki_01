@@ -1,24 +1,4 @@
-/*!
-  _   _  ___  ____  ___ ________  _   _   _   _ ___   
- | | | |/ _ \|  _ \|_ _|__  / _ \| \ | | | | | |_ _| 
- | |_| | | | | |_) || |  / / | | |  \| | | | | || | 
- |  _  | |_| |  _ < | | / /| |_| | |\  | | |_| || |
- |_| |_|\___/|_| \_\___/____\___/|_| \_|  \___/|___|
-                                                                                                                                                                                                                                                                                                                                       
-=========================================================
-* Horizon UI - v1.1.0
-=========================================================
 
-* Product Page: https://www.horizon-ui.com/
-* Copyright 2023 Horizon UI (https://www.horizon-ui.com/)
-
-* Designed and Coded by Simmmple
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 
 // Chakra imports
 import {
@@ -37,6 +17,10 @@ import Usa from "assets/img/dashboards/usa.png";
 import MiniCalendar from "components/calendar/MiniCalendar";
 import MiniStatistics from "components/card/MiniStatistics";
 import IconBox from "components/icons/IconBox";
+import Todo from "components/card/Todo";
+import TodoHealth from "components/card/TodoHealth";
+import TodoLifestyle from "components/card/TodoLifestyle";
+import TodoTravel from "components/card/TodoTravel";
 import React from "react";
 import {
   MdAddTask,
@@ -62,9 +46,10 @@ export default function UserReports() {
   // Chakra Color Mode
   const brandColor = useColorModeValue("brand.500", "white");
   const boxBg = useColorModeValue("secondaryGray.300", "whiteAlpha.100");
+  const pinkaiType = ["Health", "Finance", "Lifestyle", "Travel"];
   return (
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
-      <SimpleGrid
+      {/* <SimpleGrid
         columns={{ base: 1, md: 2, lg: 3, "2xl": 6 }}
         gap='20px'
         mb='20px'>
@@ -149,8 +134,14 @@ export default function UserReports() {
       <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px' mb='20px'>
         <TotalSpent />
         <WeeklyRevenue />
+      </SimpleGrid> */}
+      <SimpleGrid columns={{ base: 2, md: 2, xl: 2 }} gap='90px' mb='20px' mr='30px'mt="60px">
+        {pinkaiType.map((val, index) => (
+          <Todo pinkaiType={val} key={index} />
+        ))}
       </SimpleGrid>
-      <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
+      
+      {/* <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap='20px' mb='20px'>
         <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} />
         <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px'>
           <DailyTraffic />
@@ -166,7 +157,7 @@ export default function UserReports() {
           <Tasks />
           <MiniCalendar h='100%' minW='100%' selectRange={false} />
         </SimpleGrid>
-      </SimpleGrid>
+      </SimpleGrid> */}
     </Box>
   );
 }

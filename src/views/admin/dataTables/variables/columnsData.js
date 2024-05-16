@@ -1,19 +1,19 @@
 export const columnsDataDevelopment = [
   {
-    Header: "NAME",
-    accessor: "name",
+    Header: "APP",
+    accessor: "app",
   },
   {
-    Header: "TECH",
-    accessor: "tech",
+    Header: "DEVICE",
+    accessor: "device",
   },
   {
     Header: "DATE",
     accessor: "date",
   },
   {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "PERCENT",
+    accessor: "percent",
   },
 ];
 
@@ -27,8 +27,8 @@ export const columnsDataCheck = [
     accessor: "progress",
   },
   {
-    Header: "QUANTITY",
-    accessor: "quantity",
+    Header: "TOTAL PAGES",
+    accessor: "total pages",
   },
   {
     Header: "DATE",
@@ -42,12 +42,12 @@ export const columnsDataColumns = [
     accessor: "name",
   },
   {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "STATUS",
+    accessor: "status",
   },
   {
-    Header: "QUANTITY",
-    accessor: "quantity",
+    Header: "TOTAL DURATION",
+    accessor: "total duration",
   },
   {
     Header: "DATE",
@@ -61,15 +61,15 @@ export const columnsDataComplex = [
     accessor: "name",
   },
   {
-    Header: "STATUS",
-    accessor: "status",
+    Header: "SINGER",
+    accessor: "singer",
   },
   {
     Header: "DATE",
     accessor: "date",
   },
   {
-    Header: "PROGRESS",
-    accessor: "progress",
+    Header: "PLATFORM",
+    accessor: "platform",
   },
 ];

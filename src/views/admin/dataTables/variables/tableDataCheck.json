@@ -1,80 +1,80 @@
 [
   {
-    "name":["Marketplace",false],
-    "quantity": 2458, 
-    "date": "12.Jan.2021",
-    "progress": 75.5  
+    "name":["Little Women",true],
+    "total pages": 2458, 
+    "date": "8.April.2024",
+    "progress": 75.53 
   },
   {
-    "name":["Venus DB PRO",true],
-    "quantity": 1485, 
-    "date": "21.Feb.2021",
+    "name":["To Kill a Mocking Bird",true],
+    "total pages": 1485, 
+    "date": "26.April.2024",
     "progress": 35.4  
   },
   {
-    "name":["Venus DS",true],
-    "quantity": 1024, 
-    "date": "13.Mar.2021",
+    "name":["Pride and Prejudice",true],
+    "total pages": 1024, 
+    "date": "13.April.2024",
     "progress": 25  
   },
   {
-    "name":["Venus 3D Asset",true],
-    "quantity": 858, 
-    "date": "24.Jan.2021",
-    "progress": 100  
+    "name":["The Diary of a Young Girl",true],
+    "total pages": 858, 
+    "date": "24.April.2024",
+    "progress": 45 
   },
   {
-    "name":["Marketplace",false],
-    "quantity": 258, 
-    "date": "Oct 24, 2022",
-    "progress": 75.5  
+    "name":["Harry Potter and the Sorcerer's Stone",false],
+    "total pages": 2058, 
+    "date": "23.April 2024",
+    "progress": 0  
   },
   {
-    "name":["Marketplace",false],
-    "quantity": 258, 
-    "date": "Oct 24, 2022",
-    "progress": 75.5  
+    "name":["1984",false],
+    "total pages": 1238, 
+    "date": "29,April. 2024",
+    "progress": 5.5  
   },
   {
-    "name":["Marketplace",false],
-    "quantity": 258, 
-    "date": "12.Jan.2021",
-    "progress": 75.5  
+    "name":["The Lord of the Rings",false],
+    "total pages": 1228, 
+    "date": "19.April.2024",
+    "progress": 2 
   },
   {
-    "name":["Venus DB PRO",false],
-    "quantity": 858, 
-    "date": "21.Feb.2021",
-    "progress": 35.4  
+    "name":["Jan Eyre",false],
+    "total pages": 858, 
+    "date": "12.April.2024",
+    "progress":1 
   },
   {
-    "name":["Venus DS",false],
-    "quantity": 1024, 
-    "date": "13.Mar.2021",
-    "progress": 25  
+    "name":["Harry Potter and the Deathly Hallows",false],
+    "total pages": 1024, 
+    "date": "13.April.2024",
+    "progress": 5  
   },
   {
-    "name":["Venus 3D Asset",false],
-    "quantity": 258, 
-    "date": "24.Jan.2021",
-    "progress": 100  
+    "name":["The Kite Runner",false],
+    "total pages": 1308, 
+    "date": "24.April.2024",
+    "progress": 10  
   },
   {
-    "name":["Marketplace",false],
-    "quantity": 1024, 
-    "date": "Oct 24, 2022",
-    "progress": 75.5  
+    "name":["Animal Farm",false],
+    "total pages": 1024, 
+    "date": "1.April.2024",
+    "progress": 5.5  
   },
   {
-    "name":["Marketplace",false],
-    "quantity": 258, 
-    "date": "Oct 24, 2022",
-    "progress": 75.5  
+    "name":["The Great Gatsby",false],
+    "total pages": 2973, 
+    "date": "3.April 2024",
+    "progress": 9  
   },
   {
-    "name":["Marketplace",false],
-    "quantity": 258, 
-    "date": "Oct 24, 2022",
-    "progress": 75.5  
+    "name":["The Catcher in the Rye",false],
+    "quantity": 1287, 
+    "date": "3.April. 2024",
+    "progress": 10  
   }
 ]

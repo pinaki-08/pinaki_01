@@ -10,6 +10,7 @@ import { switchStyles } from "./components/switch";
 import { linkStyles } from "./components/link";
 import { breakpoints } from "./foundations/breakpoints";
 import { globalStyles } from "./styles";
+import React from "react";
 export default extendTheme(
   { breakpoints }, // Breakpoints
   globalStyles,
